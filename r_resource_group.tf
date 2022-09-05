@@ -7,11 +7,11 @@ resource "azurerm_resource_group" "south" {
   }
 }
 
-resource "azurerm_resource_group" "west" {
-  name     = azurecaf_name.west.results["azurerm_resource_group"]
-  location = "ukwest"
+# resource "azurerm_resource_group" "west" {
+#   name     = azurecaf_name.west.results["azurerm_resource_group"]
+#   location = "ukwest"
 
-  lifecycle {
-    create_before_destroy = true
-  }
-}
+#   lifecycle {
+#     create_before_destroy = true
+#   }
+# }
