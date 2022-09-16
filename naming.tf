@@ -1,5 +1,5 @@
 resource "azurecaf_name" "south" {
-  name = lower("sync-dev-uks")
+  name = lower("amc-dev-uks")
   resource_types = ["azurerm_resource_group",
     "azurerm_virtual_network",
     "azurerm_subnet",
@@ -22,7 +22,7 @@ resource "azurecaf_name" "south" {
 }
 
 resource "azurecaf_name" "west" {
-  name = lower("sync-dev-ukw")
+  name = lower("amc-dev-ukw")
   resource_types = ["azurerm_resource_group",
     "azurerm_virtual_network",
     "azurerm_subnet",
